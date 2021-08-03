@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C5FA230926B96819008B7C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA230826B96819008B7C77 /* AppDelegate.swift */; };
-		C5FA230B26B96819008B7C77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA230A26B96819008B7C77 /* SceneDelegate.swift */; };
 		C5FA230D26B96819008B7C77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA230C26B96819008B7C77 /* ViewController.swift */; };
-		C5FA231026B96819008B7C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FA230E26B96819008B7C77 /* Main.storyboard */; };
 		C5FA231226B96819008B7C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FA231126B96819008B7C77 /* Assets.xcassets */; };
 		C5FA231526B96819008B7C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FA231326B96819008B7C77 /* LaunchScreen.storyboard */; };
+		C5FA231D26B97786008B7C77 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA231C26B97786008B7C77 /* UITextField+Extensions.swift */; };
+		C5FA232126B98A86008B7C77 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA232026B98A86008B7C77 /* PresentationController.swift */; };
+		C5FA232326B98BA0008B7C77 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA232226B98BA0008B7C77 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5FA230526B96819008B7C77 /* task-NumberingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "task-NumberingGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FA230826B96819008B7C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5FA230A26B96819008B7C77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5FA230C26B96819008B7C77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C5FA230F26B96819008B7C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5FA231126B96819008B7C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FA231426B96819008B7C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FA231626B96819008B7C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FA231C26B97786008B7C77 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		C5FA232026B98A86008B7C77 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		C5FA232226B98BA0008B7C77 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				C5FA230826B96819008B7C77 /* AppDelegate.swift */,
-				C5FA230A26B96819008B7C77 /* SceneDelegate.swift */,
 				C5FA230C26B96819008B7C77 /* ViewController.swift */,
-				C5FA230E26B96819008B7C77 /* Main.storyboard */,
 				C5FA231126B96819008B7C77 /* Assets.xcassets */,
 				C5FA231326B96819008B7C77 /* LaunchScreen.storyboard */,
 				C5FA231626B96819008B7C77 /* Info.plist */,
+				C5FA231C26B97786008B7C77 /* UITextField+Extensions.swift */,
+				C5FA232026B98A86008B7C77 /* PresentationController.swift */,
+				C5FA232226B98BA0008B7C77 /* OverlayView.swift */,
 			);
 			path = "task-NumberingGame";
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 			files = (
 				C5FA231526B96819008B7C77 /* LaunchScreen.storyboard in Resources */,
 				C5FA231226B96819008B7C77 /* Assets.xcassets in Resources */,
-				C5FA231026B96819008B7C77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +139,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FA231D26B97786008B7C77 /* UITextField+Extensions.swift in Sources */,
 				C5FA230D26B96819008B7C77 /* ViewController.swift in Sources */,
 				C5FA230926B96819008B7C77 /* AppDelegate.swift in Sources */,
-				C5FA230B26B96819008B7C77 /* SceneDelegate.swift in Sources */,
+				C5FA232126B98A86008B7C77 /* PresentationController.swift in Sources */,
+				C5FA232326B98BA0008B7C77 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C5FA230E26B96819008B7C77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C5FA230F26B96819008B7C77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C5FA231326B96819008B7C77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
